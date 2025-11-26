@@ -134,14 +134,13 @@
           "type": "string",
           "enum": [
             "FREE",
-            "OCCUPIED",
-            "MAINTENANCE"
+            "OCCUPIED"
           ],
           "description": "Поточний статус стелажу"
         },
         "pricePerDay": {
           "type": "number",
-          "minimum": 10.0,
+          "exclusiveMinimum": 0.0,
           "exclusiveMaximum": 1000.0,
           "description": "Вартість оренди за день"
         },
